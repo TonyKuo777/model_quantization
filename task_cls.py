@@ -8,10 +8,13 @@ import torch.nn as nn
 import torch.backends.cudnn as cudnn
 import torch.nn.functional as F
 
-import datasets
-import models
-import utils
-from tensorboardX import SummaryWriter
+try:
+    from tensorboardX import SummaryWriter
+    import utils
+    import models
+    import datasets
+except (ImportError, RuntimeError, FileNotFoundError) as e:
+    print('import project module error', e)
 
 dali_enable = True
 try:
@@ -37,9 +40,10 @@ try:
 except (ImportError, RuntimeError, FileNotFoundError) as e:
     plugin_enable=False
 
-def get_parser():
+def get_parser(parser=None):
     # default parameters for various projects
-    parser = utils.get_parser()
+    if parser is None:
+        parser = utils.get_parser()
 
     # custom parameters for quantization related projects
     parser.add_argument('--base', default=1, type=int, help='base used in GroupNet') 
