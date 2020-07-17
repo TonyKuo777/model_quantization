@@ -32,11 +32,11 @@ COCO | FCOS | - | Torch-18 | 32/32 | - | 33.4 | 1x,FPN-BN
 COCO | FCOS | - | Torch-18 | 32/32 | - | 33.9 | 1x,FPN-BN, FP16
 COCO | FCOS | - | Torch-18 | 32/32 | - | 33.9 | 1x,FPN-BN,Head-BN
 COCO | FCOS | - | Torch-18 | 32/32 | - | 34.3 | 1x,FPN-SyncBN,Head-SyncBN
-COCO | FCOS | LSQ | Torch-18 | 4/4 | - | 35.2 | 1x,FPN-BN, Quantize-All, double-init
-COCO | FCOS | LSQ | Torch-18 | 3/3 | - | 34.1 | 1x,FPN-BN, Quantize-All, double-init
-COCO | FCOS | LSQ | Torch-18 | 2/2 | - | 33.4 | 1x,FPN-BN, Quantize-Backbone, double-init
-COCO | FCOS | LSQ | Torch-18 | 2/2 | - | 32.0 | 1x,FPN-BN, Quantize-All, singe-pass-init
-COCO | FCOS | LSQ | Torch-18 | 2/2 | - | 30.3 | 1x,FPN-BN, Quantize-All, double-init
+COCO | FCOS | - | Torch-18 | 4/4 | - | 35.2 | 1x,FPN-BN, Quantize-All, double-init
+COCO | FCOS | - | Torch-18 | 3/3 | - | 34.1 | 1x,FPN-BN, Quantize-All, double-init
+COCO | FCOS | - | Torch-18 | 2/2 | - | 33.4 | 1x,FPN-BN, Quantize-Backbone, double-init
+COCO | FCOS | - | Torch-18 | 2/2 | - | 32.0 | 1x,FPN-BN, Quantize-All, singe-pass-init
+COCO | FCOS | - | Torch-18 | 2/2 | - | 30.3 | 1x,FPN-BN, Quantize-All, double-init
 COCO | FCOS | LQ-Net | Torch-18 | ter/ter | - | 32.6 | 1x,FPN-BN, Quantize-Backbone, double-init
 COCO | FCOS | LQ-Net | Torch-18 | ter/ter | - | 26.2 | 1x,FPN-BN, Quantize-All, double-init
 
