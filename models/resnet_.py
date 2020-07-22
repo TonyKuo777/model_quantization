@@ -205,9 +205,6 @@ class BasicBlock(nn.Module):
 
     def forward(self, x):
 
-        if self.shrink is not None:
-            x = self.shrink(x)
-
         if not self.enable_skip:
             residual = x
 
